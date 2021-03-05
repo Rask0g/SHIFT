@@ -1,4 +1,4 @@
-insert into product_groups
+insert into shop.product_groups
 values (1, null, 'Электроника'),
        (2, 1, 'Телефоны'),
        (3, 2, 'Смартфоны'),

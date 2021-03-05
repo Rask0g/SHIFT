@@ -1,4 +1,4 @@
---Написать процедуру для получения списка всех магазинов
+--Получение списка всех магазинов
 create or replace procedure get_shops_names_list(
     p_shops_names inout varchar[]
 )

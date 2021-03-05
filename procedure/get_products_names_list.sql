@@ -1,4 +1,4 @@
---Написать процедуру для получения списка всего ассортимента товаров сети
+--Получение списка всего ассортимента товаров сети
 create or replace procedure get_products_names_list(
     p_products_names inout varchar[]
 )

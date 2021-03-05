@@ -1,6 +1,7 @@
+--Получение всех скидок за определенный период
 create or replace procedure get_discounts_list_for_period(
-    p_begin in    timestamp,
-    p_finish   in    timestamp,
+    p_begin	 in    timestamp,
+    p_finish	 in    timestamp,
     p_discounts inout discount_info[]
 ) as $$
 begin

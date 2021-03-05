@@ -1,4 +1,4 @@
---Написать процедуру для получения списка товаров и их количество на складе конкретного магазина
+--Получение списка товаров и их количество на складе конкретного магазина
 create or replace procedure get_products_from_shop(
     p_shop_id     in    integer,
     p_products_id inout integer[],

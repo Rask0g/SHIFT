@@ -1,4 +1,4 @@
-insert into quantity_types values
+insert into shop.quantity_types values
 (1, 'штука'),
 (2, 'килограмм'),
 (3, 'метр');

@@ -1,4 +1,4 @@
---Написать процедуру перемещения сотрудника на работу в другой магазин
+--Перемещение сотрудника на работу в другой магазин
 create or replace procedure update_employees_shop(
     p_employee_id   in integer,
     p_shop_id       in integer
