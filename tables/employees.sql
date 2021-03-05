@@ -5,7 +5,7 @@ create table shop.employees
 			primary key,
 	first_name varchar,
 	second_name varchar,
-	last_name int,
+	last_name varchar,
 	position varchar,
 	manager_id int,
 	shop_id int
