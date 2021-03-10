@@ -5,5 +5,5 @@ create type discount_info as (
     product_id integer,
     group_id   integer,
     percent    double precision,
-    fixed_sum  money
+    fixed_sum  numeric(12,2)
 );
