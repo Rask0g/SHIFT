@@ -12,7 +12,8 @@ as
 $$
 begin
     if (p_product_id is null and p_group_id is not null or p_product_id is not null and p_group_id is null) and  -- p_product_id xor p_group_id
-       (p_percent is null and p_fixed_sum is not null or p_percent is not null and p_fixed_sum is null)
+       (p_percent is null and p_fixed_sum is not null or p_percent is not null and p_fixed_sum is null) or
+       (p_type_id = 1)
     then insert into shop.discounts (type_id, begin, finish, product_id, group_id, percent, fixed_sum)
          values (p_type_id, p_begin, p_finish, p_product_id, p_group_id, p_percent, p_fixed_sum);
     else

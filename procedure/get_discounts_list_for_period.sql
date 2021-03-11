@@ -10,7 +10,7 @@ begin
            )
       into p_discounts
       from shop.discounts d
-     where d.begin between p_begin and p_finish
-        or d.begin   between p_begin and p_finish;
+     where d.begin  < p_finish
+       and d.finish > p_begin;
 end;
 $$ language plpgsql;
